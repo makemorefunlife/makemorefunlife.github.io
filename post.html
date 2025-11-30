@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 - makemorefunlife's Blog</title>
+  <meta name="description" content="makemorefunlife의 개인 블로그">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/prism.css">
+  
+  <!-- Marked.js for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  
+  <!-- Prism.js for syntax highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-typescript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-css.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-yaml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markdown.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">makemorefunlife</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">← 목록으로</a>
+          <button id="theme-toggle" class="theme-btn" aria-label="테마 변경">
+            <span class="theme-icon sun">☀️</span>
+            <span class="theme-icon moon">🌙</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main post-page">
+      <!-- Post Header -->
+      <article class="post-article">
+        <header class="post-header">
+          <h1 class="post-title" id="post-title">게시글 제목</h1>
+          <div class="post-meta" id="post-meta">
+            <time class="post-date" id="post-date"></time>
+            <span class="post-category" id="post-category"></span>
+          </div>
+          <div class="post-tags" id="post-tags">
+            <!-- Tags will be dynamically inserted -->
+          </div>
+        </header>
+
+        <!-- Post Content -->
+        <div class="post-content" id="post-content">
+          <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>게시글을 불러오는 중...</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Giscus Comments -->
+      <section class="comments-section">
+        <h2 class="comments-title">💬 댓글</h2>
+        <div id="giscus-container"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 makemorefunlife. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="https://github.com/makemorefunlife" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/post-loader.js"></script>
+</body>
+</html>
+
