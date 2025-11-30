@@ -222,9 +222,9 @@
     const script = document.createElement('script');
     script.src = 'https://giscus.app/client.js';
     script.setAttribute('data-repo', 'makemorefunlife/makemorefunlife.github.io');
-    script.setAttribute('data-repo-id', 'YOUR_REPO_ID'); // TODO: 실제 값으로 교체 필요
+    script.setAttribute('data-repo-id', 'R_kgDOQfrdQg'); // TODO: 실제 값으로 교체 필요
     script.setAttribute('data-category', 'General');
-    script.setAttribute('data-category-id', 'YOUR_CATEGORY_ID'); // TODO: 실제 값으로 교체 필요
+    script.setAttribute('data-category-id', 'DIC_kwDOQfrdQs4CzNdA'); // TODO: 실제 값으로 교체 필요
     script.setAttribute('data-mapping', 'pathname');
     script.setAttribute('data-strict', '0');
     script.setAttribute('data-reactions-enabled', '1');
